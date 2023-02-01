@@ -17,13 +17,13 @@ const projects = [
     title: 'Rapid Wiki',
     stack: ['React', 'Redux', 'TailWindCSS'],
     link: 'https://fkcodes.com',
-    description: 'A reinvented wikipedia application that allows users to access all types of information and sort by categories and by most recent'
+    description: 'A reinvented wikipedia application that allows users to access all types of information and sort by categories'
   },
   {
     title: 'PokeBattle',
     stack: ['React', 'MUI', 'TailWindCSS'],
     link: 'https://fkcodes.com',
-    description: 'Choose to play as the main three pokemons as you take on diffrent trainers decide the real champ'
+    description: 'Choose to play as the main three pokemons as you take on diffrent trainers decide who the real champ is'
   },
   {
     title: 'Income Tracker',
@@ -76,11 +76,11 @@ const projects = [
 const Projects = React.forwardRef((props, ref) => (
   
   <div ref={ref}>
-        <div className='w-1/2 ml-auto mr-auto'>
+        <div className='ml-auto mr-auto'>
         <h1 className='font-bold text-5xl mt-20 mb-0 ml-auto mr-auto text-center'>Projects</h1>
         </div>
         <div className=' relative mb-20 mt-12'>
-          <Carousel fade className='w-1/2 ml-auto mr-auto'>
+          <Carousel fade className='w-full ml-auto mr-auto md:w-1/2'>
                 <Carousel.Item className=' h-[500px]'>
                     <img
                     class="d-block w-100"
@@ -123,7 +123,7 @@ const Projects = React.forwardRef((props, ref) => (
         </div>
         
         
-        <div className=" w-1/2 ml-auto mr-auto flex flex-col md:flex-row items-center justify-center">
+        <div className="  w-full ml-auto mr-auto flex flex-col md:w-1/2 flex-row items-center justify-center">
          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
           {projects.map(item => (
                 <PortfolioItem

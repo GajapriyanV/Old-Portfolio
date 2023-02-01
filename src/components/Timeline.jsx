@@ -39,7 +39,7 @@ details:
 
 const Timeline = React.forwardRef((props, ref) => (
   <div ref={ref}>
-      <div className='w-1/2 ml-auto mr-auto'>
+      <div className='w-2/3 ml-auto mr-auto items-center'>
         <h1 className='font-bold text-5xl mt-20 mb-0 ml-auto mr-auto text-center'>My Experiences</h1>
       </div>
       <div className=' ml-auto mr-auto w-1/2 flex flex-col md:flex-row justify-center my-20'>
