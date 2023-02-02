@@ -9,6 +9,11 @@ import OpenInNewIcon from '@mui/icons-material/OpenInNew';
 
 
 const PortfolioItem = ({title,stack,description,link}) => {
+
+  const url = {link}
+  
+  
+  console.log(url)
   return (
     
     <div class="flex justify-center items-center">
@@ -21,10 +26,14 @@ const PortfolioItem = ({title,stack,description,link}) => {
           </div>
           <div className='flex items-center justify-center w-full gap-2 -mt-4'>
             <div>
-            <OpenInNewIcon/>
-            </div>
+            <a href={link}>
+            <OpenInNewIcon style={{ color: "black" }}/>
+            </a>
+            </div> 
             <div>
-              <GitHubIcon/>
+              <a href={link}>
+              <GitHubIcon style={{ color: "black" }}/>
+              </a>
             </div>
           </div>
           
@@ -40,7 +49,8 @@ const PortfolioItem = ({title,stack,description,link}) => {
                ))}  
         </div>
       </div>
-    </div> 
+    </div>
+    
 
   )
 }
