@@ -31,7 +31,7 @@ const Nav = ({resultRef,resultRef1}) => {
         </ul>
         </div>
         
-        <a className='no-underline text-black font-semibold hidden md:block' href="/assets/Gajapriyan Resume 2023.pdf">Resume</a>
+        <a className='no-underline text-black font-semibold hidden md:block' href="/assets/Gajapriyan Vigneswaran Resume 2023 - Google Docs.pdf">Resume</a>
     </nav>
     </header>
 
