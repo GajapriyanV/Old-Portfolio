@@ -22,19 +22,18 @@ const Nav = ({resultRef,resultRef1}) => {
     <header className='w-[100%] md:w-[75%] mt-12 mb-0 ml-auto mr-auto'>
         <nav className='flex justify-center items-center md:justify-between'>
         <div className='font-semibold hidden md:block'>Gajapriyan</div>
-        <div className='items-center'>
-        <ul className='flex justify-center items-center px-5 py-3 rounded-full text-black font-semibold text-base bg-gray-100 gap-8'>
-            <div>
-            <button>Home</button>
-            </div>
-            <div>
-            <button onClick={onSubmit}>Timeline</button>
-            </div>
-            <div>
-            <button onClick={onSubmit1}>Projects</button>
-            </div>
+        <div className='flex justify-center items-center px-5 py-3 rounded-full text-black font-semibold text-base bg-gray-100 gap-8'>
             
-        </ul>
+            <button className='ml-5 md:ml-0'>Home</button>
+            
+            
+            <button  onClick={onSubmit}>Timeline</button>
+            
+            
+            <button onClick={onSubmit1}>Projects</button>
+            
+            
+        
         </div>
         
         <a className='no-underline text-black font-semibold hidden md:block' href="/assets/Gajapriyan Vigneswaran Resume 2023 - Google Docs.pdf">Resume</a>
