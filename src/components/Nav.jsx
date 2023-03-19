@@ -23,10 +23,16 @@ const Nav = ({resultRef,resultRef1}) => {
         <nav className='flex justify-center items-center md:justify-between'>
         <div className='font-semibold hidden md:block'>Gajapriyan</div>
         <div className='items-center'>
-        <ul className='flex justify-center items-center px-5 py-3 rounded-full text-black font-semibold text-base bg-gray-100'>
-            <button><ul>Home</ul></button>
-            <button  onClick={onSubmit}><ul>Timeline</ul></button>
-            <button  onClick={onSubmit1}><ul>Projects</ul></button>
+        <ul className='flex justify-center items-center px-5 py-3 rounded-full text-black font-semibold text-base bg-gray-100 gap-8'>
+            <div>
+            <button>Home</button>
+            </div>
+            <div>
+            <button onClick={onSubmit}>Timeline</button>
+            </div>
+            <div>
+            <button onClick={onSubmit1}>Projects</button>
+            </div>
             
         </ul>
         </div>
